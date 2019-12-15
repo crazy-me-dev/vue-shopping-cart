@@ -1,23 +1,27 @@
 <template>
   <div id="app">
-    <ProductList msg="Welcome to Your Vue.js App"/>
+    <ProductList msg="Welcome to Your Vue.js App" />
+    <hr />
+    <ShoppingCart></ShoppingCart>
   </div>
 </template>
 
 <script>
-import ProductList from './components/ProductList.vue'
+import ProductList from "./components/ProductList.vue";
+import ShoppingCart from "./components/ShoppingCart.vue";
 
 export default {
-  name: 'app',
+  name: "app",
   components: {
-    ProductList
+    ProductList,
+    ShoppingCart
   }
-}
+};
 </script>
 
 <style>
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
